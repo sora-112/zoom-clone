@@ -11,3 +11,6 @@ npm start
 
 step 3:
 open on port 3030
+
+step 4:
+copy the meeting room id from address bar and share

@@ -16,7 +16,7 @@ myPeer.on('open', id => {
 let myVideoStream;
 navigator.mediaDevices.getUserMedia({
     video: true,
-    audio: true
+    audio: false
 }).then(stream => {
     myVideoStream = stream
     addVideoStream(myVideo, stream)
@@ -39,10 +39,9 @@ navigator.mediaDevices.getUserMedia({
 
 const connectToNewUser = (userId, stream) => {
     const call = myPeer.call(userId, stream)
-    let newvideo = document.createElement('video')
+    const Video = document.createElement('video')
     call.on('stream', userVideoStream => {
-        console.log(userVideoStream)
-        addVideoStream(newvideo, userVideoStream)
+        addVideoStream(Video, userVideoStream)
     })
 }
 

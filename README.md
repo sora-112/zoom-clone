@@ -1,5 +1,5 @@
 # zoom-clone
-A plain video chat app built using Node.js and WebRTC
+A video chat app with text chat functionality built using Node.js,Express.js and WebRTC
 
 
 AFTER CLONING:
